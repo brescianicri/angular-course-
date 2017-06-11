@@ -6,7 +6,17 @@
   </head>
   <body>
 
-
+  	<div ng-controller="TestController as vm">
+	  	
+	  	<span ng-bind="vm.nome"></span>
+	  	<br>
+	  	
+	  	<input type="text" name="name" ng-model="vm.nome" placeholder="{{vm.nome}}"
+  		
+  		<span ng-bind="vm.cognome"></span>
+  		<input type="text" name="surname" ng-model="vm.cognome" >
+  		
+  	</div>
 
     <script src="/vendors/angular/angular.js"></script>
     <script src="App/bundle.js"></script>
